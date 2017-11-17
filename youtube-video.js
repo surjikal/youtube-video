@@ -52,7 +52,7 @@
       type = stream.type.split(";")[0];
       quality = stream.quality.split(",")[0];
       stream.original_url = stream.url;
-      stream.url = "" + stream.url + "&signature=" + stream.sig;
+      stream.url = "" + stream.url + "&signature=" + stream.signature;
       sources["" + type + " " + quality] = stream;
     }
     return sources;
